@@ -120,8 +120,7 @@ const Login = ({ onLogin }) => {
         </form>
         <div className="flex justify-center items-center space-x-2 mt-4">
           <p className="text-black">Already a user?</p>
-          <a
-            
+          <button
             onClick={(e) => {
               e.preventDefault();
               setLoginPage(!loginPage);
@@ -129,10 +128,10 @@ const Login = ({ onLogin }) => {
             className="text-blue-500 hover:underline"
           >
             {loginPage ? "Signup" : "Login"}
-          </a>
+          </button>
         </div>
 
-        <a
+        <button
           
           onClick={(e) => {
             e.preventDefault();
@@ -141,7 +140,7 @@ const Login = ({ onLogin }) => {
           className="block mt-4 text-center text-gray-500 hover:underline"
         >
           Continue as guest
-        </a>
+        </button>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ function FilterProvider({ children }) {
     console.log("filter activated ");
     if (search) setfilteredProducts(filteredData);
     else setfilteredProducts(data);
-  }, [filteredData,search]);
+  }, [filteredData,search,data]);
   return (
     <FilterContext.Provider
       value={{ setfilterType, setSearch, filteredproducts, isLoading }}

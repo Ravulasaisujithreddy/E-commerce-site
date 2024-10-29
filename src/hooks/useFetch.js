@@ -12,13 +12,13 @@ function UseFetch(url, arr = []) {
         setIsLoading(false);
       })
       .catch((err) => console.error(err));
-  }, [...arr]);
+  }, [url]);
   const values = useMemo(
     () => ({
       data: data,
       isLoading: isLoading,
     }),
-    [data]
+    [data,isLoading]
   );
   return values;
 }

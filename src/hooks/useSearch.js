@@ -40,7 +40,7 @@ function useSearch(products, filter) {
     if (JSON.stringify(filteredProducts) !== JSON.stringify(filtered)) {
       setFiltered(filteredProducts);
     }
-  }, [products, filter]); // Re-run only if products or filter change
+  }, [products, filter ,filtered]); // Re-run only if products or filter change
 
   return { filteredData: filtered };
 }
