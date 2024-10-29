@@ -121,7 +121,7 @@ const Login = ({ onLogin }) => {
         <div className="flex justify-center items-center space-x-2 mt-4">
           <p className="text-black">Already a user?</p>
           <a
-            href="#"
+            
             onClick={(e) => {
               e.preventDefault();
               setLoginPage(!loginPage);
@@ -133,7 +133,7 @@ const Login = ({ onLogin }) => {
         </div>
 
         <a
-          href="#"
+          
           onClick={(e) => {
             e.preventDefault();
             handleGuestLogin();

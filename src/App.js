@@ -61,7 +61,7 @@ function App() {
     setDisplaySearch(() => {
       return location.pathname === "/";
     });
-  });
+  },[location]);
 
   return (
     <ThemeContext.Provider value={{ theme, setTheme, setfilterType }}>
