@@ -1,5 +1,5 @@
 // src/components/Checkout.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function Checkout() {
   const [paymentSuccessful, setPaymentSuccessful] = useState(false);
@@ -15,8 +15,8 @@ function Checkout() {
       {!paymentSuccessful ? (
         <div className="flex flex-col items-center">
           <p className="mb-2">Processing payment...</p>
-          <button 
-            onClick={handlePayment} 
+          <button
+            onClick={handlePayment}
             className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
           >
             Confirm Payment

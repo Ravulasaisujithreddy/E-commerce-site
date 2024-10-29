@@ -1,5 +1,5 @@
 // src/components/Products.js
-import React, { useContext, useEffect } from 'react';
+import React, { useContext} from 'react';
 import { FaHeart } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { ThemeContext } from '../App'; // Import your ThemeContext

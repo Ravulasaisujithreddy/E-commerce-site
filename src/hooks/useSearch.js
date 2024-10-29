@@ -1,17 +1,15 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
 function useSearch(products, filter) {
   const [filtered, setFiltered] = useState(products); // Initialize with products
 
   useEffect(() => {
     // If no filter is provided, reset to the full product list
-    console.log("from use Search")
-    console.log(filtered)
-    console.log(filter)
+    console.log("from use Search");
+    console.log(filtered);
+    console.log(filter);
     const { filtertype, value } = filter;
 
-
-    
     let filteredProducts = [...products]; // Copy products to avoid direct mutation
 
     switch (filtertype) {
@@ -24,10 +22,14 @@ function useSearch(products, filter) {
         filteredProducts = products.filter((product) => product.price < value);
         break;
       case "category":
-        filteredProducts = products.filter((product) => product.category === value);
+        filteredProducts = products.filter(
+          (product) => product.category === value
+        );
         break;
       case "rating":
-        filteredProducts=products.filter((product)=>product.rating.rate>=value);
+        filteredProducts = products.filter(
+          (product) => product.rating.rate >= value
+        );
         break;
       default:
         filteredProducts = products; // Default case: no filtering

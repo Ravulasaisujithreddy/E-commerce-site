@@ -9,14 +9,14 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.7.7",
     "firebase": "^11.0.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-firebase-hooks": "^5.1.1",
     "react-rating-stars-component": "^2.2.0",
-    "react-router-dom": "^6.14.1",
+    "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
     "react-toastify": "^10.0.6",
-    "web-vitals": "^3.0.4"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -27,10 +27,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "eslint:recommended",
-      "plugin:react/recommended",
-      "plugin:prettier/recommended"
+      "react-app/jest"
     ]
   },
   "browserslist": {
@@ -46,13 +43,6 @@
     ]
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.13",
-    "eslint": "^8.54.0",
-    "prettier": "^3.0.0",
-    "postcss": "^8.4.26",
-    "autoprefixer": "^10.4.14",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-config-prettier": "^9.0.0"  
+    "tailwindcss": "^3.4.13"
   }
-
 }
